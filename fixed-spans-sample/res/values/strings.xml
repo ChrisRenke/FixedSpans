@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Fixed Spans</string>
+
+  <string name="text_0">Here\'s fixed spaced.</string>
+  <string name="text_1">Based on \'W\' or \'M\'</string>
+  <string name="text_2">Here\'s relative spaced.</string>
+  <string name="text_3">So\'s this one</string>
+
+  <string name="numeric_0">$29,011.11</string>
+  <string name="numeric_1">$51.78</string>
+  <string name="numeric_2">(555) 777-5555</string>
+  <string name="numeric_3">(111) 111-1111</string>
+  <string name="numeric_4">192.168.1.1</string>
+
+</resources>
