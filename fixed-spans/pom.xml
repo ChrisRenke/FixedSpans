@@ -13,6 +13,7 @@
 
   <artifactId>fixed-spans</artifactId>
   <name>FixedSpans</name>
+  <packaging>apklib</packaging>
 
   <properties>
     <platform.version>4.1.1.4</platform.version>

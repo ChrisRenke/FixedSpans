@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <declare-styleable name="JustifyingTextView">
+    <attr name="justifyLastLine" format="boolean"/>
+    <attr name="justifyMode">
+      <enum name="whitespaceOnly" value="0"/>
+      <enum name="allCharacters" value="1"/>
+    </attr>
+    <attr name="whitespaceWeight" format="float"/>
+  </declare-styleable>
+
+</resources>

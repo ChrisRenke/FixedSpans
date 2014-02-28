@@ -1,145 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fitsSystemWindows="true"
-    android:padding="8dp"
+    android:fillViewport="true"
     >
-  <TextView
-      android:id="@+id/mono_0"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/text_0"
-      />
-  <TextView
-      android:id="@+id/mono_1"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/text_1"
-      />
-  <TextView
-      android:id="@+id/mono_2"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/text_2"
-      />
-  <TextView
-      android:id="@+id/mono_3"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/text_3"
-      />
-
-  <View
-      android:layout_width="fill_parent"
-      android:layout_height="48dp"
-      />
 
   <LinearLayout
       android:layout_width="fill_parent"
-      android:layout_height="0dp"
-      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="12dp"
       >
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        >
-      <TextView
-          android:id="@+id/tabular_0"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_0"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/tabular_1"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_1"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/tabular_2"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_2"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/tabular_3"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_3"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/tabular_4"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_4"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/mono_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_0"
+        />
+
+    <TextView
+        android:id="@+id/mono_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_1"
+        />
+
+    <TextView
+        android:id="@+id/mono_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_2"
+        />
+
+    <TextView
+        android:id="@+id/mono_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_3"
+        />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
+        android:layout_marginTop="48dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         >
-      <TextView
-          android:id="@+id/normal_0"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_0"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/normal_1"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_1"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/normal_2"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_2"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/normal_3"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_3"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
-      <TextView
-          android:id="@+id/normal_4"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="right"
-          android:text="@string/numeric_4"
-          android:textAppearance="@android:style/TextAppearance.Large"
-          />
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          >
+        <TextView
+            android:id="@+id/tabular_0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_0"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/tabular_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_1"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/tabular_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_2"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/tabular_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_3"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/tabular_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_4"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          >
+        <TextView
+            android:id="@+id/normal_0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_0"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/normal_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_1"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/normal_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_2"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/normal_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_3"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+        <TextView
+            android:id="@+id/normal_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/numeric_4"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+      </LinearLayout>
+
     </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="48dp"
+        android:id="@+id/fade_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/fade_0"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        />
+
+    <SeekBar
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:id="@+id/seek_bar"
+        android:layout_gravity="center"
+        />
+
+    <com.chrisrenke.fixedspans.JustifyingTextView
+        android:layout_marginTop="24dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/justify_0"
+        />
+
+    <com.chrisrenke.fixedspans.JustifyingTextView
+        android:layout_marginTop="24dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/justify_0"
+        widget:whitespaceWeight="1.0"
+        widget:justifyMode="allCharacters"
+        />
+
+    <com.chrisrenke.fixedspans.JustifyingTextView
+        android:layout_marginTop="24dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/justify_0"
+        widget:justifyMode="allCharacters"
+        widget:justifyLastLine="true"
+        />
+
+
+    <com.chrisrenke.fixedspans.JustifyingTextView
+        android:layout_marginTop="24dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/justify_0"
+        widget:whitespaceWeight="10.0"
+        widget:justifyMode="allCharacters"
+        widget:justifyLastLine="true"
+        />
 
   </LinearLayout>
 
-</LinearLayout>
-
+</ScrollView>

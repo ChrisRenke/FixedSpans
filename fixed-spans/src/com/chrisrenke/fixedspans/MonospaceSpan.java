@@ -22,6 +22,7 @@ import android.text.style.ReplacementSpan;
 
 import static java.lang.Math.ceil;
 
+/** A {@link ReplacementSpan} that monospaces single-line text. */
 public class MonospaceSpan extends ReplacementSpan {
 
   private static final String REFERENCE_CHARACTERS = "MW";

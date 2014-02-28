@@ -26,9 +26,14 @@ import android.text.SpannableString;
 import android.text.TextPaint;
 import android.text.style.CharacterStyle;
 import android.text.style.TypefaceSpan;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import com.chrisrenke.fixedspans.MonospaceSpan;
+import com.chrisrenke.fixedspans.ShadowedCrossFadeSpan;
 import com.chrisrenke.fixedspans.TabularSpan;
+
+import static android.graphics.Color.BLACK;
+import static android.graphics.Color.WHITE;
 
 public class DemoActivity extends Activity {
 
@@ -63,6 +68,26 @@ public class DemoActivity extends Activity {
     span(R.id.normal_2, new MoonFlowerSpan(this));
     span(R.id.normal_3, new MoonFlowerSpan(this));
     span(R.id.normal_4, new MoonFlowerSpan(this));
+
+    SeekBar seek = (SeekBar) findViewById(R.id.seek_bar);
+    final ShadowedCrossFadeSpan span =
+        new ShadowedCrossFadeSpan(WHITE, BLACK, BLACK, 200, 0, 0, 2, 6);
+    final TextView fadetext = (TextView) findViewById(R.id.fade_0);
+    seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+      @Override public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        span.setParameter((float) progress / (float) seekBar.getMax());
+        SpannableString spannableString = new SpannableString(fadetext.getText().toString());
+        spannableString.setSpan(span, 0, spannableString.length(), 0);
+        fadetext.setText(spannableString);
+      }
+
+      @Override public void onStartTrackingTouch(SeekBar seekBar) {
+      }
+
+      @Override public void onStopTrackingTouch(SeekBar seekBar) {
+      }
+    });
+    span(R.id.fade_0, span);
   }
 
   private void span(int id, CharacterStyle span) {
@@ -75,7 +100,6 @@ public class DemoActivity extends Activity {
   public class MoonFlowerSpan extends TypefaceSpan {
 
     private static final String FONT_FAMILY = "sans-serif";
-
     private final Context context;
 
     MoonFlowerSpan(Context context) {
